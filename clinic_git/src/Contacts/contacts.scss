@@ -1,0 +1,47 @@
+.contacts {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    font-family: 'Roboto';
+
+    &-title {
+        font-size: 56px;
+        line-height: 110%;
+        text-align: center;
+    }
+
+    &-container {
+        margin: 80px 0;
+        display: flex;
+        justify-content: space-evenly;
+
+        &-left {
+            margin-left: 150px;
+            width: 50vw;
+
+            .work-time {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .contacts {
+        margin: 0;
+
+        .contacts-title {
+            font-size: 26px;
+        }
+
+        .contacts-container {
+            flex-direction: column;
+            margin: 30px 0;
+            align-items: center;
+
+            .contacts-container-left {
+                margin: 0;
+            }
+        }
+    }
+}

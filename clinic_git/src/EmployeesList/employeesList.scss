@@ -1,0 +1,31 @@
+.employees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto';
+
+    &-title {
+        font-size: 56px;
+        line-height: 110%;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .employees-title {
+        margin-top: 0px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+}
